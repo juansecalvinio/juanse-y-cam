@@ -23,7 +23,7 @@ const CountdownTimer: React.FC<CountdownTimerProps> = ({ targetDate }) => {
         const minutes = Math.floor((difference / 1000 / 60) % 60);
         const seconds = Math.floor((difference / 1000) % 60);
 
-        setTimeLeft(`${days} días ${hours} hs ${minutes} min ${seconds} seg`);
+        setTimeLeft(`${days} días ${hours}hs ${minutes}min ${seconds}seg`);
       } else {
         setTimeLeft("¡Ha llegado el gran día!");
         clearInterval(interval);

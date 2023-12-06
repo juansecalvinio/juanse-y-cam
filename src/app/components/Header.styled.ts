@@ -6,6 +6,7 @@ export const Container = styled.header`
   flex-direction: column;
   align-items: center;
   margin-top: 2rem;
+  text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.2);
 
   h2 {
     font-size: 5rem;
@@ -24,4 +25,8 @@ export const Container = styled.header`
 
 export const ImageWrapper = styled.div`
   margin-top: 4rem;
+
+  & :nth-child(1) {
+    filter: drop-shadow(2px 2px 3px rgba(0, 0, 0, 0.2));
+  }
 `;

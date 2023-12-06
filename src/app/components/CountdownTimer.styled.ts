@@ -8,6 +8,7 @@ export const Container = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
+  text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.2);
 
   h3 {
     font-family: "Dancing Script", sans-serif;
@@ -15,6 +16,6 @@ export const Container = styled.div`
   }
 
   p {
-    font-size: 18px;
+    font-size: 20px;
   }
 `;
