@@ -1,0 +1,12 @@
+.main {
+  /* border: 2px dashed black; */
+  flex: 1;
+}
+
+/* Mobile */
+@media (max-width: 700px) {
+}
+
+/* Tablet and Smaller Desktop */
+@media (min-width: 701px) and (max-width: 1120px) {
+}

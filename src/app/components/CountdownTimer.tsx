@@ -1,5 +1,8 @@
 "use client";
 import React, { useState, useEffect } from "react";
+import { motion } from "framer-motion";
+
+import { Container } from "./CountdownTimer.styled";
 
 interface CountdownTimerProps {
   targetDate: Date;
@@ -32,11 +35,25 @@ const CountdownTimer: React.FC<CountdownTimerProps> = ({ targetDate }) => {
     return () => clearInterval(interval);
   }, [targetDate]);
 
+  if (timeLeft === "") return null;
+
   return (
-    <div>
-      <h1>Cuenta Regresiva para el Casamiento:</h1>
-      <p>{timeLeft}</p>
-    </div>
+    <motion.div
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      transition={{ duration: 2 }}
+    >
+      <Container>
+        <h3>Faltan:</h3>
+        <motion.p
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ duration: 2 }}
+        >
+          {timeLeft}
+        </motion.p>
+      </Container>
+    </motion.div>
   );
 };
 

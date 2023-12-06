@@ -1,0 +1,8 @@
+@font-face {
+  font-family: "Daydream";
+  src: url("/fonts/Daydream.woff") format("woff"),
+    url("/fonts/Daydream.ttf") format("truetype"); /* Safari, Android, iOS */
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
