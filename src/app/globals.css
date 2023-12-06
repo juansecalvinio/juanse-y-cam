@@ -18,7 +18,7 @@ body {
 
 body {
   /* background-color: #fffdf7; */
-  background-image: url("/images/bg01.png");
+  background-image: url("/images/bg02.png");
   background-size: cover; /* Ajusta la imagen para cubrir toda la página */
   background-position: center; /* Centra la imagen en la página */
   background-repeat: no-repeat; /* Evita que la imagen se repita */
