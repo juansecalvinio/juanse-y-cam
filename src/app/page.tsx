@@ -1,6 +1,11 @@
-import CountdownTimer from "./components/CountdownTimer";
-import { Header } from "./components/Header";
-
+import {
+  AccountDataSection,
+  CountDownSection,
+  DateLocationSection,
+  EndSection,
+  MainSection,
+  WhySection,
+} from "./sections";
 import styles from "./app.module.css";
 
 export default function Home() {
@@ -8,8 +13,12 @@ export default function Home() {
 
   return (
     <main className={styles.main}>
-      <Header />
-      <CountdownTimer targetDate={weddingDate} />
+      <MainSection />
+      <CountDownSection targetDate={weddingDate} />
+      <DateLocationSection />
+      <WhySection />
+      <AccountDataSection />
+      <EndSection />
     </main>
   );
 }
