@@ -16,10 +16,18 @@ export const AccountDataSection = () => {
           cuenta:
         </h3>
         <p>Banco Santander</p>
-        <p>CBU: 0720175888000037261740</p>
-        <p>Alias: juansecalvinio</p>
-        <p>Titular: Calviño Juan Sebastian</p>
-        <p>DNI: 37019595</p>
+        <p>
+          <strong>CBU:</strong> 0720175888000037261740
+        </p>
+        <p>
+          <strong>Alias:</strong> juansecalvinio
+        </p>
+        <p>
+          <strong>Titular:</strong> Calviño Juan Sebastian
+        </p>
+        <p>
+          <strong>DNI:</strong> 37019595
+        </p>
       </Container>
     </motion.section>
   );

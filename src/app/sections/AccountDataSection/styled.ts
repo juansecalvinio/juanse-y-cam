@@ -7,13 +7,15 @@ export const Container = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 1rem;
   text-align: center;
+  gap: 0.5rem;
 
   h3 {
     font-family: "Style Script", sans-serif;
     font-weight: normal;
     font-size: 3rem;
+    line-height: 1;
+    margin-bottom: 1rem;
 
     /* Mobile */
     @media (max-width: 370px) {

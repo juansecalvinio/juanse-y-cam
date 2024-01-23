@@ -16,6 +16,7 @@ export const ContentWrapper = styled.div`
   align-items: center;
   justify-content: space-between;
   text-align: center;
+  gap: 0.5rem;
 
   h3 {
     font-family: "Style Script", sans-serif;
