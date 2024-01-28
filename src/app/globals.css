@@ -31,6 +31,8 @@ a {
 
 @media (max-width: 768px) {
   body {
-    background-position: 70%;
+    background-color: #dde0da;
+    background-image: none;
+    /* background-position: 70%; */
   }
 }
