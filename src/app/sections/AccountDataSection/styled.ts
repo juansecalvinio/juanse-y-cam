@@ -18,7 +18,7 @@ export const Container = styled.div`
     margin-bottom: 1rem;
 
     /* Mobile */
-    @media (max-width: 370px) {
+    @media (max-width: 500px) {
       font-size: 2rem;
     }
   }
@@ -28,7 +28,7 @@ export const Container = styled.div`
     font-size: 1.5rem;
 
     /* Mobile */
-    @media (max-width: 370px) {
+    @media (max-width: 500px) {
       font-size: 1.2rem;
     }
   }

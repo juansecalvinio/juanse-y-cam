@@ -12,6 +12,7 @@ export const MainSection = () => {
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       transition={{ duration: 2 }}
+      style={{ width: "100%" }}
     >
       <Container>
         <h2>Juanse</h2>

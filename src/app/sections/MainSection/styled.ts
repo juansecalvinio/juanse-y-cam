@@ -5,7 +5,8 @@ export const Container = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: 10rem;
+  padding-top: 10rem;
+  height: 100vh;
 
   h2 {
     font-size: 8rem;
@@ -13,7 +14,7 @@ export const Container = styled.div`
     line-height: 1rem;
 
     /* Mobile */
-    @media (max-width: 370px) {
+    @media (max-width: 500px) {
       font-size: 6rem;
     }
   }
