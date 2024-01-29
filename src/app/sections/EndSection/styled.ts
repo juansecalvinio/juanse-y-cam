@@ -12,7 +12,7 @@ export const Container = styled.div`
     font-weight: normal;
 
     /* Mobile */
-    @media (max-width: 500px) {
+    @media (max-width: 700px) {
       font-size: 3rem;
     }
   }

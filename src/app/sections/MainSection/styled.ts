@@ -14,7 +14,7 @@ export const Container = styled.div`
     line-height: 1rem;
 
     /* Mobile */
-    @media (max-width: 500px) {
+    @media (max-width: 700px) {
       font-size: 6rem;
     }
   }
