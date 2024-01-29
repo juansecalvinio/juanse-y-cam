@@ -16,9 +16,9 @@ export const WhySection = () => {
           Porque queremos celebrar junto a vos la decisión de caminar juntos el
           resto de nuestra vida en amor incondicional.
         </p>
-        <p>
+        {/* <p>
           <strong>1 Juan 4</strong>
-        </p>
+        </p> */}
       </Container>
     </motion.section>
   );
