@@ -1,6 +1,6 @@
 "use client";
-import React, { useState, useEffect } from "react";
-import { motion } from "framer-motion";
+import React, { useState, useEffect, useRef } from "react";
+import { MotionValue, motion, useScroll, useTransform } from "framer-motion";
 import { Container, TimerElement, TimerElementsWrapper } from "./styled";
 
 interface CountDownSectionProps {
@@ -49,17 +49,13 @@ export const CountDownSection = ({ targetDate }: CountDownSectionProps) => {
 
   return (
     <motion.section
-      initial={{ opacity: 0 }}
-      animate={{ opacity: 1 }}
-      transition={{ duration: 2 }}
+      initial={{ opacity: 0, x: -100 }}
+      whileInView={{ opacity: 1, x: 0 }}
+      transition={{ duration: 0.5 }}
     >
       <Container>
         <h2>Faltan...</h2>
-        <motion.p
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ duration: 2 }}
-        >
+        <motion.p>
           <TimerElementsWrapper>
             <TimerElement>
               <h4>{days}</h4>

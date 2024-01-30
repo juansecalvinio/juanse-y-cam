@@ -11,7 +11,7 @@ export const MainSection = () => {
     <motion.section
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
-      transition={{ duration: 2 }}
+      transition={{ duration: 0.5 }}
       style={{ width: "100%" }}
     >
       <Container>
@@ -26,13 +26,23 @@ export const MainSection = () => {
             height={50}
           />
         </ImageWrapper>
-        <IoIosArrowDown
-          color="#7d5427"
-          size={"50px"}
-          style={{
-            marginTop: "5rem",
+        <motion.div
+          animate={{ translateY: ["10px", "-10px", "-10px", "10px"] }}
+          transition={{
+            duration: 2,
+            ease: "easeInOut",
+            repeat: Infinity,
+            repeatDelay: 0.1,
           }}
-        />
+        >
+          <IoIosArrowDown
+            color="#7d5427"
+            size={"50px"}
+            style={{
+              marginTop: "5rem",
+            }}
+          />
+        </motion.div>
       </Container>
     </motion.section>
   );

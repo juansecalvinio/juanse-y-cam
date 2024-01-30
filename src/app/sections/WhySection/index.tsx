@@ -6,9 +6,9 @@ import { Container } from "./styled";
 export const WhySection = () => {
   return (
     <motion.section
-      initial={{ opacity: 0 }}
-      animate={{ opacity: 1 }}
-      transition={{ duration: 2 }}
+      initial={{ opacity: 0, x: 100 }}
+      whileInView={{ opacity: 1, x: 0 }}
+      transition={{ duration: 0.5 }}
     >
       <Container>
         <h3>¿Por qué?</h3>

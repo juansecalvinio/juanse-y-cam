@@ -7,8 +7,8 @@ export const EndSection = () => {
   return (
     <motion.footer
       initial={{ opacity: 0 }}
-      animate={{ opacity: 1 }}
-      transition={{ duration: 2 }}
+      whileInView={{ opacity: 1 }}
+      transition={{ duration: 0.5 }}
     >
       <Container>
         <h2>Te esperamos!</h2>
