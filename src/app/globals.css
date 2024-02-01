@@ -22,8 +22,12 @@ body {
   background-color: #dde0da;
   color: #7d5427;
   font-family: sans-serif;
-  overflow-x: hidden;
   height: 100%;
+  overflow-x: hidden;
+}
+
+body::-webkit-scrollbar {
+  display: none;
 }
 
 a {
@@ -35,6 +39,5 @@ a {
   body {
     background-color: #dde0da;
     background-image: none;
-    /* background-position: 70%; */
   }
 }

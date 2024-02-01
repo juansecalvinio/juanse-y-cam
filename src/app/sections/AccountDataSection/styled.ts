@@ -16,6 +16,7 @@ export const Container = styled.div`
   max-width: 700px;
   margin: 0 auto;
   padding: 2.5rem 1rem;
+  padding-bottom: 5rem;
 
   h3 {
     font-family: "Style Script", sans-serif;
