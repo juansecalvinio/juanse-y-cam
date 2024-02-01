@@ -9,7 +9,7 @@ export const EndSection = () => {
       as={motion.section}
       initial={{ opacity: 0 }}
       whileInView={{ opacity: 1 }}
-      transition={{ duration: 0.5 }}
+      transition={{ duration: 1 }}
     >
       <Container>
         <h2>Te esperamos!</h2>

@@ -7,9 +7,9 @@ export const WhySection = () => {
   return (
     <Section
       as={motion.section}
-      initial={{ opacity: 0, x: 100 }}
-      whileInView={{ opacity: 1, x: 0 }}
-      transition={{ duration: 0.5 }}
+      initial={{ opacity: 0 }}
+      whileInView={{ opacity: 1 }}
+      transition={{ duration: 1 }}
     >
       <Container>
         <h3>¿Por qué?</h3>
