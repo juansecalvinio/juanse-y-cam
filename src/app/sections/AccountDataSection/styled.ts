@@ -13,10 +13,15 @@ export const Container = styled.div`
   align-items: center;
   text-align: center;
   gap: 0.5rem;
-  max-width: 700px;
+  max-width: 50vw;
   margin: 0 auto;
   padding: 2.5rem 1rem;
   padding-bottom: 5rem;
+
+  /* Mobile */
+  @media (max-width: 700px) {
+    max-width: 100vw;
+  }
 
   h3 {
     font-family: "Style Script", sans-serif;

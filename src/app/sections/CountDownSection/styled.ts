@@ -17,7 +17,7 @@ export const Container = styled.div`
   align-items: center;
   justify-content: flex-end;
   gap: 1rem;
-  max-width: 700px;
+  max-width: 100vw;
   margin: 0 auto;
   padding-bottom: 2.5rem;
 

@@ -53,12 +53,7 @@ export const CountDownSection = ({ targetDate }: CountDownSectionProps) => {
   const { days, hours, minutes } = timeLeft;
 
   return (
-    <Section
-      as={motion.section}
-      initial={{ opacity: 0, x: -100 }}
-      whileInView={{ opacity: 1, x: 0 }}
-      transition={{ duration: 0.5 }}
-    >
+    <Section as={motion.section}>
       <Container>
         <h2>Faltan...</h2>
         <motion.p>
