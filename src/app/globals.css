@@ -9,19 +9,21 @@
   margin: 0;
 }
 
-html,
-body {
-  overflow-x: scroll;
+html {
   height: 100%;
+  background-color: #dde0da;
 }
 
 body {
   background-image: url("/images/bg02.png");
-  background-size: cover; /* Ajusta la imagen para cubrir toda la página */
-  background-position: center; /* Centra la imagen en la página */
-  background-repeat: no-repeat; /* Evita que la imagen se repita */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: #dde0da;
   color: #7d5427;
   font-family: sans-serif;
+  overflow-x: hidden;
+  height: 100%;
 }
 
 a {

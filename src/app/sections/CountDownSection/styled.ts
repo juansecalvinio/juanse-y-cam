@@ -1,5 +1,9 @@
 import styled from "styled-components";
 
+export const Section = styled.section`
+  width: 100%;
+`;
+
 export const Container = styled.div`
   bottom: 8rem;
   left: 0;
@@ -8,6 +12,10 @@ export const Container = styled.div`
   flex-direction: column;
   align-items: center;
   gap: 1rem;
+  max-width: 700px;
+  margin: 0 auto;
+  padding-top: 5rem;
+  padding-bottom: 2.5rem;
 
   h2,
   h3 {

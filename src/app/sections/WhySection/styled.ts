@@ -1,5 +1,9 @@
 import styled from "styled-components";
 
+export const Section = styled.section`
+  width: 100%;
+`;
+
 export const Container = styled.div`
   bottom: 8rem;
   left: 0;
@@ -8,6 +12,9 @@ export const Container = styled.div`
   flex-direction: column;
   align-items: center;
   gap: 0.5rem;
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 2.5rem 1.5rem;
 
   h3 {
     font-family: "Style Script", sans-serif;
@@ -19,5 +26,12 @@ export const Container = styled.div`
     font-family: "Old Standard TT", sans-serif;
     font-size: 1.5rem;
     text-align: center;
+  }
+
+  /* Mobile */
+  @media (max-width: 700px) {
+    p {
+      font-size: 1.25rem;
+    }
   }
 `;

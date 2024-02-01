@@ -1,7 +1,12 @@
 "use client";
 import React, { useState, useEffect, useRef } from "react";
 import { MotionValue, motion, useScroll, useTransform } from "framer-motion";
-import { Container, TimerElement, TimerElementsWrapper } from "./styled";
+import {
+  Container,
+  Section,
+  TimerElement,
+  TimerElementsWrapper,
+} from "./styled";
 
 interface CountDownSectionProps {
   targetDate: Date;
@@ -48,7 +53,8 @@ export const CountDownSection = ({ targetDate }: CountDownSectionProps) => {
   const { days, hours, minutes } = timeLeft;
 
   return (
-    <motion.section
+    <Section
+      as={motion.section}
       initial={{ opacity: 0, x: -100 }}
       whileInView={{ opacity: 1, x: 0 }}
       transition={{ duration: 0.5 }}
@@ -73,6 +79,6 @@ export const CountDownSection = ({ targetDate }: CountDownSectionProps) => {
         </motion.p>
         <h3>...para nuestra boda!</h3>
       </Container>
-    </motion.section>
+    </Section>
   );
 };

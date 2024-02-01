@@ -1,5 +1,9 @@
 import styled from "styled-components";
 
+export const Section = styled.section`
+  width: 100%;
+`;
+
 export const Container = styled.div`
   bottom: 8rem;
   left: 0;
@@ -9,6 +13,9 @@ export const Container = styled.div`
   align-items: center;
   text-align: center;
   gap: 0.5rem;
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 2.5rem 1rem;
 
   h3 {
     font-family: "Style Script", sans-serif;
