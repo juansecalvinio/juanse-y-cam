@@ -1,14 +1,15 @@
 "use client";
 import React from "react";
 import { motion } from "framer-motion";
-import { Container } from "./styled";
+import { Container, Section } from "./styled";
 
 export const AccountDataSection = () => {
   return (
-    <motion.section
-      initial={{ opacity: 0, x: -100 }}
-      whileInView={{ opacity: 1, x: 0 }}
-      transition={{ duration: 0.5 }}
+    <Section
+      as={motion.section}
+      initial={{ opacity: 0 }}
+      whileInView={{ opacity: 1 }}
+      transition={{ duration: 1 }}
     >
       <Container>
         <h3>
@@ -29,6 +30,6 @@ export const AccountDataSection = () => {
           <strong>DNI:</strong> 37019595
         </p>
       </Container>
-    </motion.section>
+    </Section>
   );
 };

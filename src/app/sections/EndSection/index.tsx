@@ -1,18 +1,19 @@
 "use client";
 import React from "react";
 import { motion } from "framer-motion";
-import { Container } from "./styled";
+import { Container, Section } from "./styled";
 
 export const EndSection = () => {
   return (
-    <motion.footer
+    <Section
+      as={motion.section}
       initial={{ opacity: 0 }}
       whileInView={{ opacity: 1 }}
-      transition={{ duration: 0.5 }}
+      transition={{ duration: 1 }}
     >
       <Container>
         <h2>Te esperamos!</h2>
       </Container>
-    </motion.footer>
+    </Section>
   );
 };

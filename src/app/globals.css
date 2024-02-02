@@ -3,25 +3,36 @@
 @import url("https://fonts.googleapis.com/css2?family=Alex+Brush&family=Dancing+Script&family=Style+Script&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Old+Standard+TT:wght@400;700&display=swap");
 
+:root {
+  --bg-color: #ebe3db;
+}
+
 * {
   box-sizing: border-box;
   padding: 0;
   margin: 0;
 }
 
-html,
-body {
-  overflow-x: scroll;
+html {
   height: 100%;
+  background-color: var(--bg-color);
+  /* overflow-x: hidden; */
 }
 
 body {
-  background-image: url("/images/bg02.png");
-  background-size: cover; /* Ajusta la imagen para cubrir toda la página */
-  background-position: center; /* Centra la imagen en la página */
-  background-repeat: no-repeat; /* Evita que la imagen se repita */
+  background-image: url("/images/main-bg-01.jpg");
+  background-size: cover;
+  background-blend-mode: color-burn;
+  background-repeat: no-repeat;
+  background-color: var(--bg-color);
   color: #7d5427;
   font-family: sans-serif;
+  height: 100%;
+  overflow-x: hidden;
+}
+
+body::-webkit-scrollbar {
+  display: none;
 }
 
 a {
@@ -29,10 +40,9 @@ a {
   text-decoration: none;
 }
 
-@media (max-width: 768px) {
+/* @media (max-width: 768px) {
   body {
-    background-color: #dde0da;
+    background-color: var(--bg-color);
     background-image: none;
-    /* background-position: 70%; */
   }
-}
+} */

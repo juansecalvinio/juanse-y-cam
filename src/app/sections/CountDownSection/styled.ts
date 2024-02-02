@@ -1,13 +1,25 @@
 import styled from "styled-components";
 
+export const Section = styled.section`
+  background-image: url("./images/tranquera-02.jpg");
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+`;
+
 export const Container = styled.div`
+  height: 700px;
   bottom: 8rem;
   left: 0;
   width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: flex-end;
   gap: 1rem;
+  max-width: 100vw;
+  margin: 0 auto;
+  padding-bottom: 2.5rem;
 
   h2,
   h3 {
@@ -16,6 +28,7 @@ export const Container = styled.div`
   }
 
   h2 {
+    color: #ffffff;
     font-size: 5rem;
     /* Mobile */
     @media (max-width: 700px) {
@@ -24,6 +37,7 @@ export const Container = styled.div`
   }
 
   h3 {
+    color: #ffffff;
     font-size: 4rem;
 
     /* Mobile */
