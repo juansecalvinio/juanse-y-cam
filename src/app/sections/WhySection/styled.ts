@@ -14,7 +14,7 @@ export const Container = styled.div`
   gap: 0.5rem;
   max-width: 60vw;
   margin: 0 auto;
-  padding: 2.5rem 1.5rem;
+  padding: 5rem 1.5rem;
 
   /* Mobile */
   @media (max-width: 700px) {

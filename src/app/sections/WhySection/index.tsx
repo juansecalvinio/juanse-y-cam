@@ -14,16 +14,15 @@ export const WhySection = () => {
       <Container>
         <h3>¿Por qué?</h3>
         <p>
-          Porque queremos celebrar junto a vos la decisión de caminar juntos el
-          resto de nuestra vida en amor incondicional.
+          Porque queremos celebrar junto a vos la decisión de amarnos y caminar
+          juntos el resto de nuestra vida.
         </p>
         <br />
         <p>
           <i>
             “Al saber que Dios nos ama y poner nuestra confianza en su amor, el
             nuestro crece hasta hacerse perfecto. En esa clase de amor no hay
-            temor, porque ese amor expulsa todo temor. Nos amamos unos a otros
-            porque Él nos amó primero.”
+            temor, sino que el perfecto amor echa fuera el temor.”
           </i>
         </p>
         <p>
