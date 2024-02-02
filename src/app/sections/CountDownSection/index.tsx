@@ -45,7 +45,16 @@ export const CountDownSection = ({ targetDate }: CountDownSectionProps) => {
 
   if (!isClient) {
     // Renderiza un estado de carga o un marcador de posición
-    return <div>Cargando...</div>;
+    return (
+      <Section
+        as={motion.section}
+        initial={{ opacity: 0 }}
+        whileInView={{ opacity: 1 }}
+        transition={{ duration: 1 }}
+      >
+        Cargando...
+      </Section>
+    );
   }
 
   if (isWeddingDay) return null;
